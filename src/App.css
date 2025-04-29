@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Habibi&display=swap');
+
 :root{
   --dark-green: #19381F;
   --lime-yellow: #EEE82C;
@@ -12,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Habibi", sans-serif;
 }
 
 .button{
@@ -222,4 +225,31 @@ footer {
   text-decoration: none;
   color: var(--white);
   font-size: 30px;
+}
+
+.footer__link--component{
+  text-decoration: none;
+  margin-right: 10px;
+  color: var(--white);
+  transition: all 300ms ease;
+}
+
+.footer__link--component:hover{
+  color: var(--lime-green);
+}
+
+/* Google Reviews */
+
+.reviews__section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: var(--white);
+}
+
+.reviews__section h2{
+  font-size: 36px;
+  margin-bottom: 40px;
 }

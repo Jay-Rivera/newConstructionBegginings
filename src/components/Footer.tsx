@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <NavLink className="footer__logo" to="/">
-        New Beggining Construction
+        New Begginings Construction
       </NavLink>
       <div className="footer__links">
         <NavLink className="footer__link--component" to="/">

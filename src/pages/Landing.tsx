@@ -1,3 +1,4 @@
+import Reviews from "../components/Reviews";
 import ServiceCard from "../components/ServiceCard";
 import { Link } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function Landing() {
           <ServiceCard></ServiceCard>
         </div>
       </div>
+      <Reviews />
     </div>
   );
 }
