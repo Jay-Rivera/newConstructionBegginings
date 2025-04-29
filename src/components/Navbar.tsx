@@ -16,7 +16,7 @@ const Navbar: FC = () => {
         <NavLink className="nav__link--component" to="/Services">
           Services
         </NavLink>
-        <NavLink className="button" to="/Quote">
+        <NavLink className="button nav__quote" to="/Quote">
           Request Quote
         </NavLink>
       </div>
