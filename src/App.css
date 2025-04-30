@@ -7,6 +7,7 @@
   --reg-green: #53A548;
   --med-green: #4C934C;
   --white: #fffcf2;
+  --black: #212529;
 }
 
 
@@ -42,6 +43,7 @@
   top: 0;
   width: 100%;
   background-color: var(--white);
+  z-index: 10;
 }
 
 .nav__link--component{
@@ -151,7 +153,7 @@
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  gap: 40px;
+  gap: 60px;
 }
 
 /* Service Card */
@@ -172,21 +174,15 @@
 }
 
 .service__card:hover{
-  background-color: var(--med-green);
-  
-  .service__card--bottom p{
-    color: var(--white);
-  }
-  
-  .service__card--bottom h2{
-    color: black;
-  }
+  scale: 1.05;
+  box-shadow: 0px 0px 20px black;
 }
 
 .card__img{
   border-radius: 10px;
   width: 100%;
   margin-bottom: 20px;
+  border: 4px solid var(--black);
 }
 
 .service__card--bottom{
@@ -253,3 +249,16 @@ footer {
   font-size: 36px;
   margin-bottom: 40px;
 }
+
+/* Services Page */
+
+.services__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  background-image: url("https://images.unsplash.com/photo-1546552356-3fae876a61ca?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+

@@ -20,7 +20,6 @@ function Landing() {
           <ServiceCard></ServiceCard>
           <ServiceCard></ServiceCard>
           <ServiceCard></ServiceCard>
-          <ServiceCard></ServiceCard>
         </div>
       </div>
       <Reviews />
