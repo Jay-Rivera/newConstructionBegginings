@@ -1,7 +1,7 @@
 import About from "../components/About";
 import Reviews from "../components/Reviews";
-import ServiceCard from "../components/ServiceCard";
 import { Link } from "react-router-dom";
+import Overview from "../components/Overview";
 
 function Landing() {
   return (
@@ -24,17 +24,7 @@ function Landing() {
         </div>
       </div>
       <About />
-      <div className="landing__services--section">
-        <div className="landing__service--top">
-          <p>Our Services</p>
-          <h2>Professional Featured</h2>
-        </div>
-        <div className="landing__service--bottom">
-          <ServiceCard></ServiceCard>
-          <ServiceCard></ServiceCard>
-          <ServiceCard></ServiceCard>
-        </div>
-      </div>
+      <Overview />
       <Reviews />
     </div>
   );
