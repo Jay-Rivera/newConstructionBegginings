@@ -1,3 +1,4 @@
+import About from "../components/About";
 import Reviews from "../components/Reviews";
 import ServiceCard from "../components/ServiceCard";
 import { Link } from "react-router-dom";
@@ -6,11 +7,23 @@ function Landing() {
   return (
     <div>
       <div className="landing__section">
-        <h1 className="landing__title">Built to Last. Designed to Impress.</h1>
-        <Link to="/Services" className="button hero__btn">
-          Discover More
-        </Link>
+        <div className="overlay__hero"></div>
+        <div className="hero__title--section">
+          <h1 className="landing__title">
+            Built to Last. <br />
+            Designed to Impress.
+          </h1>
+          <div className="hero__buttons">
+            <Link to="/Services" className="hero__btn">
+              Discover More
+            </Link>
+            <Link className="button" to="/Quote">
+              Request Quote
+            </Link>
+          </div>
+        </div>
       </div>
+      <About />
       <div className="landing__services--section">
         <div className="landing__service--top">
           <p>Our Services</p>

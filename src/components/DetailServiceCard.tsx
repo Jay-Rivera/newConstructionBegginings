@@ -18,11 +18,15 @@ const DetailServiceCard: React.FC<DetailServiceCardProps> = ({
 }) => {
   return (
     <div className="service">
-      <img src={image} alt={title} width={200} />
+      <div className="service__card__img">
+        <img src={image} alt={title} />
+      </div>
       <div className="service__description">
         <h2>{title}</h2>
         <p>{description}</p>
-        <button onClick={onButtonClick}>{buttonLabel}</button>
+        <button className="service__button" onClick={onButtonClick}>
+          {buttonLabel}
+        </button>
       </div>
     </div>
   );
