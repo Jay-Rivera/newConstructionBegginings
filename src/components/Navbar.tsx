@@ -15,9 +15,9 @@ const Navbar: FC = () => {
         <NavLink className="nav__link--component" to="/">
           Home
         </NavLink>
-        <NavLink className="nav__link--component" to="/">
+        {/* <NavLink className="nav__link--component" to="/">
           About
-        </NavLink>
+        </NavLink> */}
         <NavLink className="nav__link--component" to="/Services">
           Services
         </NavLink>

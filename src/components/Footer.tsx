@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
+import Logo from "../assets/nbcLogo.png";
 
 function Footer() {
   return (
     <footer>
       <NavLink className="footer__logo" to="/">
+        <img className="nav__logo" src={Logo} alt="" />
         New Begginings Construction
       </NavLink>
       <div className="footer__links">

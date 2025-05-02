@@ -1,19 +1,30 @@
-import TestImg from "../assets/images/test.jpg";
+type ServiceCardProps = {
+  title: string;
+  description: string;
+  image: string;
+  buttonLabel: string;
+  onButtonClick?: () => void;
+};
 
-function ServiceCard() {
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  title,
+  description,
+  image,
+  buttonLabel,
+  onButtonClick,
+}) => {
   return (
     <div className="service__card">
-      <img src={TestImg} className="card__img" alt="" width={200} />
+      <img src={image} className="card__img" alt={title} width={200} />
       <div className="service__card--bottom">
-        <h2>Service Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          provident ut distinctio asperiores numquam praesentium aspernatur
-          temporibus nihil eius et.
-        </p>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <button className="button service__card--btn" onClick={onButtonClick}>
+          {buttonLabel}
+        </button>
       </div>
     </div>
   );
-}
+};
 
 export default ServiceCard;

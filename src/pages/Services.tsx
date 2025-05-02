@@ -1,5 +1,5 @@
-import DetailServiceCard from "../components/DetailServiceCard";
 import { services } from "../assets/data/servicesData";
+import ServiceCard from "../components/ServiceCard";
 
 function Services() {
   return (
@@ -9,17 +9,19 @@ function Services() {
           <h1>Our Services</h1>
         </div>
       </div>
-      <div className="services">
-        {services.map((service) => (
-          <DetailServiceCard
-            key={service.id}
-            title={service.title}
-            description={service.description}
-            image={service.image}
-            buttonLabel={service.buttonLabel}
-            onButtonClick={() => alert(`${service.title} clicked`)}
-          />
-        ))}
+      <div className="services__section">
+        <div className="services">
+          {services.map((service) => (
+            <ServiceCard
+              key={service.id}
+              title={service.title}
+              description={service.description}
+              image={service.image}
+              buttonLabel={service.buttonLabel}
+              onButtonClick={() => alert(`${service.title} clicked`)}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
