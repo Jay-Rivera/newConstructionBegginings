@@ -10,8 +10,9 @@ function Landing() {
         <div className="overlay__hero"></div>
         <div className="hero__title--section">
           <h1 className="landing__title">
-            Built to Last. <br />
-            Designed to Impress.
+            New Beginnings Construction Inc.
+            <br />
+            Over 25 years of Trusted Roofing & Siding Excellence
           </h1>
           <div className="hero__buttons">
             <Link to="/Services" className="hero__btn">

@@ -21,11 +21,9 @@ const Navbar: FC = () => {
         <NavLink className="nav__link--component" to="/Services">
           Services
         </NavLink>
-        <NavLink className="nav__link--component" to="/Services">
+        <NavLink className="nav__link--component" to="/Gallery">
           Gallery
         </NavLink>
-      </div>
-      <div className="nav__quote">
         <NavLink className="button nav__quote" to="/Quote">
           Request Quote
         </NavLink>

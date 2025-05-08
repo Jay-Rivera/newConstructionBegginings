@@ -1,8 +1,9 @@
 import RoofingLogo from "../assets/icons/roof-repair-icon.svg";
 import SidingLogo from "../assets/icons/brick-wall-icon.svg";
-import RemodelingLogo from "../assets/icons/home-renovation-icon.svg";
 import MultiPropertyLogo from "../assets/icons/property-icon.svg";
 import PatioLogo from "../assets/icons/terrace-icon.svg";
+import GlassLogo from "../assets/icons/glass-window-icon.svg";
+
 function Overview() {
   return (
     <div className="landing__services--section">
@@ -12,35 +13,45 @@ function Overview() {
       </div>
       <div className="landing__service--bottom">
         <div className="landing__service">
-          <img src={RoofingLogo} alt="Roofing" />
-          <p>Roofing</p>
+          <div className="landing__service--img">
+            <img src={RoofingLogo} alt="Roofing" />
+          </div>
+          <div className="landing__text--section">
+            <p>Roofing</p>
+          </div>
         </div>
         <div className="landing__service">
-          <img src={SidingLogo} alt="Roofing" />
-          <p>Siding</p>
+          <div className="landing__service--img">
+            <img src={SidingLogo} alt="Roofing" />
+          </div>
+          <div className="landing__text--section">
+            <p>Siding</p>
+          </div>
         </div>
         <div className="landing__service">
-          <img src={RemodelingLogo} alt="Roofing" />
-          <p>Home Remodeling and Renovation</p>
+          <div className="landing__service--img">
+            <img src={GlassLogo} alt="Roofing" />
+          </div>
+          <div className="landing__text--section">
+            <p>Window Installation</p>
+          </div>
         </div>
         <div className="landing__service">
-          <img src={PatioLogo} alt="Roofing" />
-          <p>Decks and Patios</p>
+          <div className="landing__service--img">
+            <img src={PatioLogo} alt="Roofing" />
+          </div>
+          <div className="landing__text--section">
+            <p>Decks and Patios</p>
+          </div>
         </div>
         <div className="landing__service">
-          <img src={MultiPropertyLogo} alt="Roofing" />
-          <p>Commercial and Residential</p>
+          <div className="landing__service--img">
+            <img src={MultiPropertyLogo} alt="Roofing" />
+          </div>
+          <div className="service__text--section">
+            <p>Commercial and Residential</p>
+          </div>
         </div>
-      </div>
-      <div className="overview__description">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-          excepturi pariatur beatae iusto labore, saepe minus possimus inventore
-          alias numquam distinctio porro repellat doloribus quia sed hic
-          laboriosam repudiandae! In quidem neque aut odit veniam earum omnis,
-          quo voluptatum voluptates architecto alias eius dolore rerum,
-          accusamus, molestias ea ab fuga.
-        </p>
       </div>
     </div>
   );

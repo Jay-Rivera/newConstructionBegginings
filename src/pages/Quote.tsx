@@ -1,32 +1,34 @@
-import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 function Contact() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   const [success, setSuccess] = useState(false);
   const [filledForm, setFilledForm] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!form.current) return;
 
     emailjs
       .sendForm(
-        "service_tsn96xc",
-        "template_efh115p",
+        "service_x2ueklq", // <-- Make sure this matches your EmailJS service ID
+        "template_bn2t5im", // <-- Must match your template ID
         form.current,
-        "u6VZFeRYDP0x5mItN"
+        "oeRedOt0WnYhgjYDF" // <-- Your public key
       )
       .then(
         (result) => {
-          console.log(result.text);
-          e.target.reset();
+          console.log("Email sent:", result.text);
+          form.current?.reset();
           setSuccess(true);
           setFilledForm(true);
         },
         (error) => {
-          console.log(error.text);
-          setFilledForm(true);
+          console.error("Email error:", error.text);
           setSuccess(false);
+          setFilledForm(true);
         }
       );
   };
@@ -46,11 +48,12 @@ function Contact() {
             the message section to provide a quote.
             <br />
             Once the form is filled out, we'll be able to reach out via either
-            phone call, text or email to properly provide a quote. The address
-            section will be extremely helpful for us but it's not required for
-            the quote.
+            phone call, text or email to properly provide a quote.
+            <br />
+            <br />
           </p>
         </div>
+
         {!filledForm ? (
           <div className="contact__submit contact__half">
             <form ref={form} onSubmit={sendEmail}>
@@ -82,14 +85,6 @@ function Contact() {
                 />
               </div>
               <div className="form__item">
-                <label className="form__item--label">Address:</label>
-                <input
-                  type="text"
-                  className="form__item--label"
-                  name="user_address"
-                />
-              </div>
-              <div className="form__item">
                 <label className="form__item--label">Message:</label>
                 <textarea
                   name="message"
@@ -97,7 +92,7 @@ function Contact() {
                   className="form__item--label"
                 />
               </div>
-              <button type="submit" value="Send" className="form__submit">
+              <button type="submit" className="form__submit">
                 Send it my way!
               </button>
             </form>
@@ -118,7 +113,7 @@ function Contact() {
                   Please{" "}
                   <a
                     className="e-link"
-                    href="mailto:Maria.Acosta1227@gmail.com"
+                    href="mailto:newbeginninsconst@gmail.com"
                   >
                     contact me
                   </a>{" "}

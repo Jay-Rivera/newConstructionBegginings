@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { services } from "../assets/data/servicesData";
 import ServiceCard from "../components/ServiceCard";
 
 function Services() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (serviceTitle: string) => {
+    navigate(`/services/${encodeURIComponent(serviceTitle)}`);
+  };
+
   return (
     <>
       <div className="services__hero">
@@ -18,7 +25,7 @@ function Services() {
               description={service.description}
               image={service.image}
               buttonLabel={service.buttonLabel}
-              onButtonClick={() => alert(`${service.title} clicked`)}
+              onButtonClick={() => handleButtonClick(service.title)}
             />
           ))}
         </div>
