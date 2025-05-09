@@ -6,7 +6,7 @@ function Footer() {
     <footer>
       <NavLink className="footer__logo" to="/">
         <img className="nav__logo" src={Logo} alt="" />
-        New Begginings Construction
+        New Beginings Construction
       </NavLink>
       <div className="footer__links">
         <NavLink className="footer__link--component" to="/">

@@ -16,14 +16,18 @@ const ServiceDetail: React.FC = () => {
   );
 
   if (!service) {
-    return <div>Service not found</div>;
+    return (
+      <div className="service__detail--page">
+        <h2 className="error__message">Service not found</h2>
+      </div>
+    );
   }
 
   return (
     <div className="service__detail--page">
       <div className="service__detail--page-left">
-        <h1>{service.title}</h1>
-        <p>{service.description}</p>
+        <h1>{service.heading}</h1>
+        <p>{service.body}</p>
       </div>
       <div className="service__detail--page-right">
         <img src={service.image} alt="" width={250} />

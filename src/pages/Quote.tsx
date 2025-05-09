@@ -85,6 +85,15 @@ function Contact() {
                 />
               </div>
               <div className="form__item">
+                <label className="form__item--label">Address:</label>
+                <input
+                  type="text"
+                  required
+                  className="form__item--label"
+                  name="user_address"
+                />
+              </div>
+              <div className="form__item">
                 <label className="form__item--label">Message:</label>
                 <textarea
                   name="message"

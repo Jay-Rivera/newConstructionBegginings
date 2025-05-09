@@ -8,17 +8,22 @@ function About() {
         <p className="about__pre-header">
           YOUR TRUSTED EXPERTS FOR SIDING, ROOFING AND MORE!
         </p>
-        <h2>Welcome to New Begginings Construction!</h2>
+        <h2>Welcome to New Beginnings Construction!</h2>
         <p className="about__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Exercitationem quas enim sed voluptate ipsam temporibus. Ducimus
-          exercitationem molestiae incidunt fuga?
+          With over 25 years of hands-on experience,{" "}
+          <span className="green">New Beginnings Construction</span> is a proud
+          family-run construction company built on the values of integrity,
+          safety, and craftsmanship. For more than two decades, we’ve brought
+          our clients’ visions to life — creating spaces that are not only
+          structurally sound but also beautifully designed.
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iure
-          provident omnis ducimus laudantium soluta nihil delectus. Omnis
-          soluta, nemo impedit sunt corporis incidunt amet dolores pariatur
-          quibusdam! Expedita, obcaecati.
+          As a multi-generational team, we combine time-tested skills with a
+          personal commitment to every project, big or small. Whether it’s a
+          custom home, renovation, or commercial build, we treat each job with
+          the same care and attention we’d give our own. At the heart of our
+          work is a simple promise: to deliver high-quality results that stand
+          the test of time — safely, honestly, and beautifully.
         </p>
         <Link className="button about__btn" to="/Quote">
           Request Quote
