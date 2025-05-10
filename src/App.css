@@ -929,6 +929,9 @@ textarea:focus {
     width: 80%;
   }
 
+  .service__card{
+    height: auto;
+  }
   /* Service detail Pages */
 
   .roofing__main--text{
