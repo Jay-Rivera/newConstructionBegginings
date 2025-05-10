@@ -1,10 +1,10 @@
-import GoogleReviewsWidget from "google-reviews-widget";
+import GoogleReviewsWidget from "./GoogleReviewsWidget";
 
 function Reviews() {
   return (
     <div className="reviews__section">
       <h2>See what our customers have to say :</h2>
-      <GoogleReviewsWidget instanceId="1Ercijjhz0G5v1AM8fUg" />
+      <GoogleReviewsWidget />
     </div>
   );
 }

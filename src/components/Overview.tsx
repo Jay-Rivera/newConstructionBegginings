@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import RoofingLogo from "../assets/icons/roof-repair-icon.svg";
 import SidingLogo from "../assets/icons/brick-wall-icon.svg";
-import MultiPropertyLogo from "../assets/icons/property-icon.svg";
 import PatioLogo from "../assets/icons/terrace-icon.svg";
 import GlassLogo from "../assets/icons/glass-window-icon.svg";
 
@@ -12,46 +12,41 @@ function Overview() {
         <h2>Professional Featured</h2>
       </div>
       <div className="landing__service--bottom">
-        <div className="landing__service">
+        <Link to="/Roofing" className="landing__service">
           <div className="landing__service--img">
             <img src={RoofingLogo} alt="Roofing" />
           </div>
           <div className="landing__text--section">
             <p>Roofing</p>
           </div>
-        </div>
-        <div className="landing__service">
+        </Link>
+
+        <Link to="/Siding" className="landing__service">
           <div className="landing__service--img">
-            <img src={SidingLogo} alt="Roofing" />
+            <img src={SidingLogo} alt="Siding" />
           </div>
           <div className="landing__text--section">
             <p>Siding</p>
           </div>
-        </div>
-        <div className="landing__service">
+        </Link>
+
+        <Link to="/Windows" className="landing__service">
           <div className="landing__service--img">
-            <img src={GlassLogo} alt="Roofing" />
+            <img src={GlassLogo} alt="Window Installation" />
           </div>
           <div className="landing__text--section">
             <p>Window Installation</p>
           </div>
-        </div>
-        <div className="landing__service">
+        </Link>
+
+        <Link to="/DecksAndPatios" className="landing__service">
           <div className="landing__service--img">
-            <img src={PatioLogo} alt="Roofing" />
+            <img src={PatioLogo} alt="Decks and Patios" />
           </div>
           <div className="landing__text--section">
             <p>Decks and Patios</p>
           </div>
-        </div>
-        <div className="landing__service">
-          <div className="landing__service--img">
-            <img src={MultiPropertyLogo} alt="Roofing" />
-          </div>
-          <div className="service__text--section">
-            <p>Commercial and Residential</p>
-          </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
