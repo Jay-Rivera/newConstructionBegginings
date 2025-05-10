@@ -17,8 +17,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className="service__card">
       <img src={image} className="card__img" alt={title} width={200} />
       <div className="service__card--bottom">
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <div className="card__info">
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
         <button className="button service__card--btn" onClick={onButtonClick}>
           {buttonLabel}
         </button>

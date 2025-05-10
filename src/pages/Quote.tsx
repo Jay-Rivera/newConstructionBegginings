@@ -38,19 +38,20 @@ function Contact() {
       <div className="contact__container">
         <div className="contact__about contact__half">
           <h3 className="contact__title">
-            Thank you for your interest in our business!
+            Let’s Build Something Great Together
           </h3>
           <h4 className="contact__sub-title lightblue">
-            Please fill out the form for a quote.
+            We're excited to learn more about your project!
           </h4>
           <p className="contact__para">
-            Please explain the specific services that you're interested in in
-            the message section to provide a quote.
-            <br />
-            Once the form is filled out, we'll be able to reach out via either
-            phone call, text or email to properly provide a quote.
+            To schedule an appointment for an estimate, we ask that you complete
+            the following form. It includes all the key details we need—your
+            name, phone number, email, project address, and a brief message.
             <br />
             <br />
+            With this information, we can ensure a smoother, more accurate
+            quoting process—saving you time and helping us deliver the
+            high-quality service we’re known for.
           </p>
         </div>
 

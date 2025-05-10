@@ -4,6 +4,7 @@ export type Service = {
     heading: string;
     description: string;
     body: string;
+    link: string;
     heading2 ? : string;
     body2 ?: string;
     image: string;
@@ -23,6 +24,7 @@ export type Service = {
       heading: "Your Roof is a Long-Term Investment",
       body:"Though no product can halt the aging process, regularly inspecting your roof can help you distinguish between normal wear and signs of trouble. A little attention now can prevent major issues later. When it's time, New Beginnings Construction is here to help with expert re-roofing and shingle replacement services throughout Greater Seattle.",
       image: roofingImg,
+      link: "/Roofing",
       buttonLabel: 'See More',
     },
     {
@@ -32,6 +34,7 @@ export type Service = {
       heading: "adf",
       body: "lorem20",
       image: sidingImg,
+      link: "/Siding",
       buttonLabel: 'See More',
     },
     {
@@ -40,15 +43,17 @@ export type Service = {
       description: 'Our team builds strong, stylish spaces designed for everyday use and long-term value.',
       heading: "adf",
       body: "lorem20",
+      link: "/DecksAndPatios",
       image: deckImg,
       buttonLabel: 'See More',
     },
     {
       id: 4,
-      title: 'Transform Your Home with Beautiful, High-Quality Windows',
+      title: 'Beautiful, High-Quality Windows',
       description: 'From modern to classic designs, we offer a wide range of window styles to complement your home.',
       heading: "adf",
       body: "lorem20",
+      link: "/Windows",
       image: windowImg,
       buttonLabel: 'See More',
     },

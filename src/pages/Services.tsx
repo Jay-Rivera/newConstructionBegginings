@@ -6,7 +6,7 @@ function Services() {
   const navigate = useNavigate();
 
   const handleButtonClick = (serviceTitle: string) => {
-    navigate(`/services/${encodeURIComponent(serviceTitle)}`);
+    navigate(`${serviceTitle}`);
   };
 
   return (
@@ -25,7 +25,7 @@ function Services() {
               description={service.description}
               image={service.image}
               buttonLabel={service.buttonLabel}
-              onButtonClick={() => handleButtonClick(service.title)}
+              onButtonClick={() => handleButtonClick(service.link)}
             />
           ))}
         </div>
