@@ -134,11 +134,6 @@ const WindowServices: React.FC = () => {
             replacement or expert advice on your next remodel, New Beginnings
             Construction is here to help.
           </p>
-          <p>
-            <strong>
-              Get started with a free, no-obligation consultation today.
-            </strong>
-          </p>
         </div>
         <div className="roofing__main--image">
           <img

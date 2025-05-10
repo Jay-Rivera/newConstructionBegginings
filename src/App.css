@@ -932,6 +932,10 @@ textarea:focus {
   .service__card{
     height: auto;
   }
+
+  .service__card--btn{
+    margin-top: 20px;
+  }
   /* Service detail Pages */
 
   .roofing__main--text{
@@ -1026,6 +1030,24 @@ textarea:focus {
       font-size: 40px;
     }
   }
+
+  /* Service page for each */
+
+.roofing__main{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.roofing__main--text{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.roofing__main--image{
+  width: 90%;
+  margin: 0 auto;
+}
 
   /* Gallery */
 
@@ -1201,23 +1223,7 @@ textarea:focus {
   width: 100%;
 }
 
-/* Service page for each */
 
-.roofing__main{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.roofing__main--text{
-  width: 90%;
-  margin: 0 auto;
-}
-
-.roofing__main--image{
-  width: 90%;
-  margin: 0 auto;
-}
 
 /* Footer Section */
 
