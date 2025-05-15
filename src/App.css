@@ -828,7 +828,7 @@ textarea:focus {
   color: var(--black);
   padding-top:20px ;
   padding-bottom: 50px;
-  gap: 100px;
+  gap: 50px;
 }
 .roofing__main{
   display: flex;
